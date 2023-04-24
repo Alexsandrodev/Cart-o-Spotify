@@ -1,0 +1,1 @@
+# Uma simples imagem de um card do Spotfy usando HTML e CSS

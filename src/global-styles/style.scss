@@ -1,0 +1,183 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0%;
+}
+
+h3 , span {
+  font-size: .75rem;
+  letter-spacing: -1%;
+  font-weight: 500;
+}
+li {
+  font-size: 0.90rem;
+  letter-spacing: -1%;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  &.img--cover {
+    object-fit: cover;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translatey(-12%);
+}
+
+.card {
+  width: 300px;
+
+  background-color: #9296C4;
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 100%;
+  padding: 4%;
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img > img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 4%;
+}
+
+.content {
+  width: 85%;
+  margin-left: 7%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex: 2;
+}
+
+.infos_card {
+  width: 100%;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.timer_music {
+  display: flex;
+}
+
+.timer_music span{
+  margin-left: 4px;
+}
+
+.timer_music > img {
+  width: 15px;
+  height: 15px;
+}
+
+.footer_card {
+  width: 100%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding-top: 7%;
+
+  border-top: 1px solid rgba(250, 250, 250, 0.5);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_card .album_infos {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.album_img ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.album_img img {
+  margin-top: -10px;
+  width: 40px;
+  height: 40px;
+}
+
+.album_infos ul li {
+  display: inline-block;
+}
+
+@media screen and (max-width: 375px) {
+
+  .infos_card{
+    padding-bottom: 10px;
+  }
+
+  li {
+    font-size: 0.6rem;
+  }
+
+  span {
+    font-size: 0.85rem;
+  }
+
+  .card {
+    max-width: 230px;
+    height: auto;
+    margin-left: 2%;
+  }
+
+  .timer_music > img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .album_img img {
+    margin-top: -3px;
+    width: 30px;
+    height: 30px;
+  }
+}
